@@ -1,0 +1,89 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+}
+.logo-link {
+}
+.logo-img {
+  border-radius: 20px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+.menu {
+}
+.menu-list {
+  display: flex;
+  gap: 20px;
+}
+.menu-item {
+  background-color: rgb(25, 186, 10);
+  border-radius: 20px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+.menu-item:hover,
+.menu-item:focus {
+  background-color: rgb(249, 249, 249);
+  box-shadow: 10px 10px 38px 0px rgba(200, 255, 196, 0.75);
+  -webkit-box-shadow: 10px 10px 38px 0px rgba(189, 255, 175, 0.75);
+  -moz-box-shadow: 10px 10px 38px 0px rgba(229, 255, 203, 0.75);
+  transform: scale(1.1);
+}
+.menu-link {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-weight: 500;
+  gap: 5px;
+  color: white;
+  fill: rgb(255, 77, 0);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: rgb(0, 0, 0);
+  fill: black;
+}
