@@ -109,7 +109,12 @@ img {
     margin-left: auto;
     width: 60px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.84);
+    background: linear-gradient(
+      transparent 55px,
+      rgba(0, 0, 0, 0.84) 55px,
+      rgba(0, 0, 0, 0.84) 250px,
+      transparent 250px
+    );
     padding: 20px 10px;
     box-sizing: border-box;
     color: white;
@@ -118,8 +123,23 @@ img {
     transition: width 0.75s ease;
     border-bottom-left-radius: 20px;
   }
-  .sidebar:hover,
-  .sidebar:focus {
+  .burger-menu {
+    display: block;
+  }
+
+  .burger-menu-cancel {
+    display: none;
+  }
+
+  .sidebar.active .burger-menu {
+    display: none;
+  }
+
+  .sidebar.active .burger-menu-cancel {
+    display: block;
+  }
+  .sidebar.active:hover,
+  .sidebar.active {
     width: 200px;
     height: 250px;
   }
