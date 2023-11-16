@@ -17,12 +17,13 @@
   <body>
     <header class="header">
       <a href="https://comfy.ua/ua/zhytomyr/" class="logo-link">
-        <img
-          src="./img/svg/logo_main.svg"
-          alt="Comfy"
-          class="logo-img animate__animated animate__hinge animate__delay-5s animate__slower"
-        />
+        <img src="./img/svg/logo_main.svg" alt="Comfy" class="logo-img" />
       </a>
+      <img
+        src="./img/foxtrot-two.jpeg"
+        alt="Foxtrot"
+        class="logo-img-fox animate__animated animate__hinge animate__delay-5s animate__slower"
+      />
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-item scroll">
@@ -37,7 +38,7 @@
             <a href="#laptop" class="menu-link"
               ><svg width="18" height="18">
                 <use href="./img/svg/symbol-defs.svg#icon-laptop"></use></svg
-              >Ноутбуки & Пк</a
+              >Ноутбуки</a
             >
           </li>
           <li class="menu-item scroll">
@@ -57,116 +58,44 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="js-open-modal"
-        ><svg width="24" height="24">
-          <use href="./img/svg/symbol-defs.svg#icon-th-list"></use></svg
-      ></a>
     </header>
-    <main class="main">
-      <div class="main-container">
-        <h2 class="main-title" id="phone">Смартфони</h2>
-        <ul class="main-list">
-          <li class="main-item">
-            <div class="phone-container">
-              <h3 class="title">All Inclusive</h3>
-              <p class="text">1799грн.</p>
-              <ul class="phone-list">
-                <li class="phone">
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </li>
-                <li class="phone">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                  nam?
-                </li>
-                <li class="phone">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-        </ul>
-      </div>
-      <div class="main-container">
-        <h2 class="main-title" id="laptop">Ноутбуки</h2>
-        <ul class="main-list">
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-        </ul>
-      </div>
-      <div class="main-container">
-        <h2 class="main-title" id="tv">Телевізори</h2>
-        <ul class="main-list">
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-        </ul>
-      </div>
-      <div class="main-container">
-        <h2 class="main-title" id="sourse">Посилання</h2>
-        <ul class="main-list">
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-          <li class="main-item"></li>
-        </ul>
-      </div>
-    </main>
-    <div class="modal" id="modal">
-      <!--   Svg иконка для закрытия окна  -->
-      <svg
-        width="26"
-        height="26"
-        class="modal__cross js-modal-close"
-        id="modal-close-btn"
-      >
-        <use href="./img/svg/symbol-defs.svg#icon-cancel"></use>
-      </svg>
+    <div class="sidebar">
       <nav class="menu-mobile">
         <ul class="menu-list-mobile">
+          <li class="menu-item-mobile burger-menu">
+            <svg width="24" height="24" class="slider-svg">
+              <use href="./img/svg/symbol-defs.svg#icon-th-list"></use>
+            </svg>
+          </li>
           <li class="menu-item-mobile js-modal-close scroll">
             <a href="#phone" class="menu-link-mobile"
-              ><svg width="18" height="18">
+              >Смартфони<svg width="24" height="24">
                 <use href="./img/svg/symbol-defs.svg#icon-phone"></use>
               </svg>
-              Смартфони</a
-            >
+            </a>
           </li>
           <li class="menu-item-mobile js-modal-close scroll">
             <a href="#laptop" class="menu-link-mobile"
-              ><svg width="18" height="18">
+              >Ноутбуки<svg width="24" height="24">
                 <use href="./img/svg/symbol-defs.svg#icon-laptop"></use></svg
-              >Ноутбуки & Пк</a
-            >
+            ></a>
           </li>
           <li class="menu-item-mobile js-modal-close scroll">
             <a href="#tv" class="menu-link-mobile"
-              ><svg width="18" height="18">
+              >Телевізори<svg width="24" height="24">
                 <use href="./img/svg/symbol-defs.svg#icon-tv"></use></svg
-              >Телевізори</a
-            >
+            ></a>
           </li>
           <li class="menu-item-mobile js-modal-close scroll">
             <a href="#sourse" class="menu-link-mobile"
-              ><svg width="18" height="18">
+              >Посилання<svg width="24" height="24">
                 <use href="./img/svg/symbol-defs.svg#icon-link"></use>
               </svg>
-              Посилання</a
-            >
+            </a>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="overlay js-overlay-modal"></div>
     <script src="./js/main.js"></script>
   </body>
 </html>
